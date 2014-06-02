@@ -123,6 +123,7 @@ public class TodoActivity extends Activity {
 			int position = data.getExtras().getInt("pos");
 			items.set(position, text);
 			itemsAdapter.notifyDataSetChanged();
+			serializeItems();
 		}
 	}
 }
